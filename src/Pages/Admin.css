@@ -1,0 +1,34 @@
+/* Common styling for both buttons */
+.main-btn {
+    padding: 100px 200px;
+    width: 80%;                 /* Equal width for both buttons */
+    max-width: 900px;           /* Optional: limit max size */
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 50px;
+    display: block;
+    margin: 40px auto;          /* Center the buttons */
+    transition: 0.3s;
+}
+
+/* User Management button */
+.user-button {
+    background-color: #FFA500;  /* Orange */
+}
+
+.user-button:hover {
+    background-color: #FF8C00;  /* Dark Orange */
+}
+
+/* Product Management button */
+.product-button {
+    background-color: #007BFF;  /* Modern Blue */
+}
+
+.product-button:hover {
+    background-color: #0056b3;  /* Dark Blue Hover */
+}

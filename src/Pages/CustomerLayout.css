@@ -1,0 +1,32 @@
+.customer-navbar {
+  width: 100%;
+  padding: 15px 20px;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.logo {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 24px;
+}
+
+.count {
+  background: orange;
+  padding: 2px 7px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,11 @@
+.back-btn {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  color: purple;
+}

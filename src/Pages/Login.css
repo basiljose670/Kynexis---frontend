@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.login-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    gap: 15px;
+}
+
+/* outer → login-outer */
+.login-outer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+/* form-group → login-form-group */
+.login-form-group input {
+    border: 2px solid;
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 9px;
+}
+
+/* form-container → login-form-container */
+.login-form-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin: 9px;
+}
+
+.login-form-container {
+    text-align: left;
+    position: relative; 
+}
+
+/* Buttons inside login-form-group */
+.login-form-group button {
+    width: 100%;
+    background-color: orangered;
+    padding: 9px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 4px;
+}
+
+/* Floating label for email */
+.login-form-group input[type='email']:focus + label {
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 15px;
+    background-color: white;
+}
+
+/* Floating label for password */
+.login-form-group input[type='password']:focus + label {
+    position: absolute;
+    margin-top: -67px;
+    margin-left: 15px;
+    background-color: white;
+}
+
+/* Hide label when not focused */
+.login-form-group input[type='password']:not(:focus) + label,
+.login-form-group input[type='email']:not(:focus) + label {
+    display: none;
+}
+
+.login-outer img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.signup-box {
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px grey;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.signup-box span {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.signup-box span:hover {
+    text-decoration: underline;
+}
