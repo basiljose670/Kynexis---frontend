@@ -23,7 +23,7 @@ export default function Customer() {
       .then(res => res.text())
       .then(msg => {
         alert(msg);
-        refreshCartCount();   // ⭐ Immediately update navbar count
+        refreshCartCount();   //  Immediately update navbar count
       })
       .catch(err => alert("Error adding to cart"));
   };
