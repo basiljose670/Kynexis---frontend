@@ -6,6 +6,8 @@ export default function CustomerLayout() {
 
   const [cartCount, setCartCount] = useState(0);
   const navigate = useNavigate();
+  const [searchText, setSearchText] = useState("");
+
 
   const userId = localStorage.getItem("userId");
 
@@ -36,13 +38,22 @@ export default function CustomerLayout() {
           Kynexis
         </h2>
 
+         {/* 🔍 SEARCH BAR */}
+          <input
+            type="text"
+            placeholder="Search products..."
+            className="search-bar"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+
         <div className="cart-icon" onClick={() => navigate("/customer/cart")}>
           🛒 <span className="count">{cartCount}</span>
         </div>
       </div>
 
       {/* ALL CHILD CUSTOMER PAGES */}
-      <Outlet context={{ refreshCartCount }} />
+      <Outlet context={{ refreshCartCount, searchText }} />
     </>
   );
 }

@@ -30,8 +30,11 @@ function App() {
 
 
       <Route path="/admin" element={<Admin />} />
+
+
       <Route path="/customer" element={<CustomerLayout />}>
         <Route index element={<Customer />} />
+        <Route path="category/:name" element={<Customer />} />
         <Route path="cart" element={<CustomerCart />} />
       </Route>
 

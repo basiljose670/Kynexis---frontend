@@ -48,7 +48,7 @@ export default function CustomerCart() {
 
       <div className="cart-list">
         {cart.products.map((prod, index) => (
-          <div className="cart-card" key={index}>
+          <div className="cart-card" key={prod.id}>
             <img src={prod.photo} alt={prod.name} />
 
             <div className="cart-info">
